@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Face detection</title>
+    <script src="./face-api.min.js"></script>
+    <script defer src="./script.js"></script>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+        #main-container{
+            /* position: relative; */
+            margin: 0;
+            padding: 0;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #myImg{
+            width: 100%;
+        }
+        #control-pannel{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding:2% 10%;
+        }
+        canvas{
+            position: absolute;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main-container">
+        <img src="./harrydp.jpeg" alt="harry" id="myImg" >
+    </div>
+    <div id="control-pannel">
+        <input type="file" name="image" id="input-image" accept="image/*, video/*">
+        <button id="detect-btn">Detect Face</button>
+    </div>
+</body>
+
+</html>
