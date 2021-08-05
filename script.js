@@ -36,10 +36,10 @@ const getData = async () => {
 // })().then(getData);
 
 Promise.all([
-    faceapi.nets.tinyFaceDetector.loadFromUri('models'),
-    faceapi.nets.faceLandmark68Net.loadFromUri('models'),
-    faceapi.nets.faceRecognitionNet.loadFromUri('models'),
-    faceapi.nets.faceExpressionNet.loadFromUri('models')
+    faceapi.nets.tinyFaceDetector.loadFromUri('/face-detection-img/models'),
+    faceapi.nets.faceLandmark68Net.loadFromUri('/face-detection-img/models'),
+    faceapi.nets.faceRecognitionNet.loadFromUri('/face-detection-img/models'),
+    faceapi.nets.faceExpressionNet.loadFromUri('/face-detection-img/models')
     //faceapi.nets.ssdMobilenetv1.loadFromUri('models')
 ]).then(getData)
 
