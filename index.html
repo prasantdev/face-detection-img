@@ -28,6 +28,11 @@
         #myImg{
             width: 100%;
         }
+        #myVideo{
+            height: 85vh;
+            width: 100%;
+            display: none;
+        }
         #control-pannel{
             display: flex;
             justify-content: space-between;
@@ -42,7 +47,8 @@
 
 <body>
     <div id="main-container">
-        <img src="./harrydp.jpeg" alt="harry" id="myImg" >
+        <img src="./harrydp.jpeg" alt="harry" id="myImg">
+        <video src="" id='myVideo' autoplay controls loop muted width="720" height="560"></video>
     </div>
     <div id="control-pannel">
         <input type="file" name="image" id="input-image" accept="image/*, video/*">
